@@ -1,1 +1,10 @@
-*notify.txt*
+*notify.txt* Plugin to send notification to the user trough the OS notification system
+
+Author:  Gianluca Arbezzano <gianarb@gmail.com>
+Author:  Lorenzo Fontana <fontanalorenzo@me.com>
+
+
+SEND NOTIFICATIONS                                              *notify-notifications*
+>
+call Notify("title", "Body")
+<
