@@ -5,6 +5,8 @@ Author:  Lorenzo Fontana <fontanalorenzo@me.com>
 
 
 SEND NOTIFICATIONS                                              *notify-notifications*
+
+To send a notification
 >
-call Notify("title", "Body")
+    :call Notify("title", "Body")
 <
