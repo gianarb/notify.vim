@@ -7,15 +7,13 @@ func! notify#setupCommands()
 endfunc
 
 func! notify#emitNotification(title, content)
-    if executable("osascript") == 1
-        silent call system('osascript -e ''display notification "'.a:content.'" with title "'.a:title.'"''')
-        return
-    endif
-
-    if executable("notify-send") == 1
-        silent call system('notify-send "'.a:title.'" "'.a:content.'"')     
-        return 
-    endif
+    for emitter in g:notify_emitters
+        let response = call('notify#'.emitter.'#emit', [a:title, a:content])
+        if response
+            continue
+        endif
+    endfor
+    return 0
 endfunc
 
 
