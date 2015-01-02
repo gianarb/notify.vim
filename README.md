@@ -12,7 +12,7 @@ Right now we have implemented only the default Mac OS X notification system via 
 Add to your plugins
 
 ```
-Plugin 'gianarb\notify'
+Plugin 'gianarb/notify.vim'
 ```
 
 Install
