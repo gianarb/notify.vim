@@ -7,8 +7,22 @@ This plugin is intended to be used by with other plugins that do background jobs
 Right now we have implemented only the default Mac OS X notification system via osascript and the Ubuntu notify-send.
 
 ## Usage
-To send a notification
+Send a notification
+
+### Using the emitNotification function
 
 ```vim
-call Notify('Title', 'Body')
+call notify#emitNotification('Title', 'Body')
+```
+
+### Using the command
+
+```vim
+:Notify title content
+```
+
+### From command line
+
+```bash
+vim +Notify\ title\ body +qall
 ```
