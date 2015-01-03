@@ -6,7 +6,12 @@ Author:  Lorenzo Fontana <fontanalorenzo@me.com>
 
 SEND NOTIFICATIONS                                              *notify-notifications*
 
-To send a notification
+Calling the emitNotification function
 >
-    :call Notify("title", "Body")
+    :call notify#emitNotification("Title", "Body")
+<
+
+Using the Notify command
+>
+    :Notify title body
 <
