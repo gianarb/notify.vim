@@ -6,7 +6,7 @@
 This plugin is intended to be used by with other plugins that do background jobs and wants to notify the user about the success of a specific job.
 See the [#Examples](#examples) section for use cases.
 
-## Implemented notification triggers
+## Implemented notification emitters
 - osascript (Mac OSX)
 - notify-send (Ubuntu)
 
