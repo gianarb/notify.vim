@@ -46,9 +46,9 @@ vim +Notify\ title\ body +qall
 
 **Dependencies**
 
-tpope/[vim-dispatch](https://github.com/tpope/vim-dispatch) (execute commands asynchronously)
+- tpope/[vim-dispatch](https://github.com/tpope/vim-dispatch) (execute commands asynchronously)
 
-Add to your vimrc
+**Add to your vimrc**
 
 ```vim
 function! GenerateCtags()
